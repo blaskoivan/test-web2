@@ -1,0 +1,27 @@
+---
+const imageUrl = 'https://imgs.search.brave.com/ZBmvepfHOsGRXtfYcIyfQcHklKrA2jFT2au9gpZVY64/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMx/NzgwNDU4NC9waG90/by9vbmUtYnVzaW5l/c3N3b21hbi1zdHVk/aW8tcG9ydHJhaXQt/bG9va2luZy1hdC10/aGUtY2FtZXJhLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1U/eDNuR1FmeGFJNzgx/Z2k5N1NpdzdESUVC/YktnMW9CeGw4bjBK/RXdNUTZzPQ'; // Reemplaza con la URL de tu imagen
+const title = "Presentación/ Nombre etc";
+const description = `
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+`;
+---
+<div class="bg-green-50 py-16 px-6 lg:px-20 font-sans">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+    <!-- Texto -->
+    <div class="space-y-6">
+      <h1 class="text-4xl font-extrabold text-green-800 sm:text-5xl">{title}</h1>
+      <p class="text-lg text-black-600 leading-relaxed">{description}</p>
+    </div>
+
+    <!-- Imagen -->
+    <div>
+      <img 
+        src={imageUrl} 
+        alt="Imagen de presentación profesional" 
+        class="w-full rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</div>
